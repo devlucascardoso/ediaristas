@@ -8,8 +8,12 @@ import {
   ProfissionaisPaper,
   ProfissionaisContainer,
 } from "ui/styles/pages/index.style";
+import { useState } from "react";
+import useIndex from "data/hooks/pages/useIndex.page";
 
 export default function Home() {
+  //const { cep, setCep } = useIndex();
+
   return (
     <div>
       <SafeEnvironment />
@@ -19,7 +23,6 @@ export default function Home() {
           "Preencha seu endereço e veja todos os profissionais da sua localização"
         }
       />
-
       <Container>
         <FormElementsContainer>
           <TextFieldMask
